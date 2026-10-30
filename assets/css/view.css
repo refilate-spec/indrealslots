@@ -1,1 +1,32 @@
+/* Product View Page Specific Styles */
+.view-hero-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(15, 23, 42, 0.6) 100%);
+}
+
+.screenshot-thumbnail {
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+}
+
+.screenshot-thumbnail:hover,
+.screenshot-thumbnail.active {
+  transform: scale(1.05);
+  opacity: 1;
+  border-color: #10b981;
+}
+
+/* Requirements Table Row Styling */
+.req-table-row {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.req-table-row:last-child {
+  border-bottom: none;
+}
+
+.req-table-row:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
 
