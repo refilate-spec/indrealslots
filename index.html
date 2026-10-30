@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGS Platform — Advanced Digital Discovery</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="pb-20 md:pb-10">
+
+  <div id="global-header"></div>
+
+  <!-- Announcement Banner -->
+  <div id="announcement-banner" class="bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium"></div>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-12 text-center">
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">Discover Next-Gen Digital Products</h1>
+    <p class="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto mb-8">Explore curated third-party games, advanced applications, and powerful system utilities.</p>
+    
+    <div class="max-w-xl mx-auto relative">
+      <input type="text" id="main-search-input" placeholder="Search games, apps, software and more..." class="w-full pl-12 pr-4 py-4 rounded-2xl glass-card text-[var(--text-primary)] focus:outline-none focus:border-emerald-500 shadow-xl text-base">
+      <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-secondary)] text-lg"></i>
+    </div>
+  </section>
+
+  <!-- Top 3 Rankings Section -->
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><i class="fa-solid fa-trophy text-amber-500"></i> Top Rated Rankings</h2>
+    <div id="top-rankings-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Main Discovery Sections -->
+  <main class="max-w-7xl mx-auto px-4 lg:px-8 space-y-16 mt-8">
+    
+    <div id="games" class="space-y-6">
+      <div class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-gamepad text-emerald-400"></i> Games Directory</h2>
+      </div>
+      <div id="games-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+
+    <div id="apps" class="space-y-6">
+      <div class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-mobile-screen text-amber-400"></i> Applications</h2>
+      </div>
+      <div id="apps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+
+    <div id="system" class="space-y-6">
+      <div class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-server text-blue-400"></i> System Utilities</h2>
+      </div>
+      <div id="system-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+
+  </main>
+
+  <div id="global-footer"></div>
+  <div id="mobile-bottom-nav"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/ranking-engine.js"></script>
+  <script src="assets/js/search-engine.js"></script>
+  <script src="assets/js/interaction-engine.js"></script>
+  <script src="assets/js/share-engine.js"></script>
+  <script src="assets/js/advertisement.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
