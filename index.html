@@ -3,66 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGS Platform — Advanced Digital Discovery</title>
+  <title>AGS Platform — Advanced Digital Discovery & Yono/Diwa Gaming Directory</title>
+  
+  <!-- Tailwind CSS Play CDN (Ensures immediate styling & responsive classes work out-of-the-box) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Project Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="pb-20 md:pb-10">
+<body class="pb-24 md:pb-12 bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300">
 
+  <!-- Global Header Container -->
   <div id="global-header"></div>
 
-  <!-- Announcement Banner -->
-  <div id="announcement-banner" class="bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium"></div>
+  <!-- Announcement / Featured Banner -->
+  <div id="announcement-banner" class="bg-gradient-to-r from-emerald-600 to-amber-600 text-white text-xs md:text-sm py-2 px-4 text-center font-medium shadow-md"></div>
 
   <!-- Hero Section -->
-  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-12 text-center">
-    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4">Discover Next-Gen Digital Products</h1>
-    <p class="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto mb-8">Explore curated third-party games, advanced applications, and powerful system utilities.</p>
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-12 text-center hero-section">
+    <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-4 text-[var(--text-primary)]">
+      Discover Next-Gen Digital Products
+    </h1>
+    <p class="text-[var(--text-secondary)] text-lg max-w-2xl mx-auto mb-8">
+      Explore curated third-party games, Yono/Diwa bonuses, advanced applications, and powerful system utilities.
+    </p>
     
-    <div class="max-w-xl mx-auto relative">
-      <input type="text" id="main-search-input" placeholder="Search games, apps, software and more..." class="w-full pl-12 pr-4 py-4 rounded-2xl glass-card text-[var(--text-primary)] focus:outline-none focus:border-emerald-500 shadow-xl text-base">
+    <!-- Intelligent Search Bar -->
+    <div class="max-w-xl mx-auto relative search-container">
+      <input type="text" id="main-search-input" placeholder="Search games, apps, bonus offers, software..." class="w-full pl-12 pr-4 py-4 rounded-2xl glass-card text-[var(--text-primary)] focus:outline-none shadow-xl text-base border border-[var(--border-color)]">
       <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-[var(--text-secondary)] text-lg"></i>
     </div>
   </section>
 
   <!-- Top 3 Rankings Section -->
-  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-8">
-    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><i class="fa-solid fa-trophy text-amber-500"></i> Top Rated Rankings</h2>
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
+    <h2 class="text-2xl font-bold mb-6 flex items-center gap-2 text-[var(--text-primary)]">
+      <i class="fa-solid fa-trophy text-amber-500"></i> Top Rated Rankings
+    </h2>
     <div id="top-rankings-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
   </section>
 
   <!-- Main Discovery Sections -->
   <main class="max-w-7xl mx-auto px-4 lg:px-8 space-y-16 mt-8">
     
+    <!-- Games & Yono/Diwa Section -->
     <div id="games" class="space-y-6">
-      <div class="flex justify-between items-center">
-        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-gamepad text-emerald-400"></i> Games Directory</h2>
+      <div class="flex justify-between items-center border-b border-[var(--border-color)] pb-3">
+        <h2 class="text-2xl font-bold flex items-center gap-2 text-[var(--text-primary)]">
+          <i class="fa-solid fa-gamepad text-emerald-400"></i> Games & Yono Directory
+        </h2>
+        <span class="text-xs text-[var(--text-secondary)] font-medium">Curated Offers</span>
       </div>
       <div id="games-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
     </div>
 
+    <!-- Applications Section -->
     <div id="apps" class="space-y-6">
-      <div class="flex justify-between items-center">
-        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-mobile-screen text-amber-400"></i> Applications</h2>
+      <div class="flex justify-between items-center border-b border-[var(--border-color)] pb-3">
+        <h2 class="text-2xl font-bold flex items-center gap-2 text-[var(--text-primary)]">
+          <i class="fa-solid fa-mobile-screen text-amber-400"></i> Applications
+        </h2>
       </div>
       <div id="apps-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
     </div>
 
+    <!-- System Utilities Section -->
     <div id="system" class="space-y-6">
-      <div class="flex justify-between items-center">
-        <h2 class="text-2xl font-bold flex items-center gap-2"><i class="fa-solid fa-server text-blue-400"></i> System Utilities</h2>
+      <div class="flex justify-between items-center border-b border-[var(--border-color)] pb-3">
+        <h2 class="text-2xl font-bold flex items-center gap-2 text-[var(--text-primary)]">
+          <i class="fa-solid fa-server text-blue-400"></i> System Utilities
+        </h2>
       </div>
       <div id="system-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
     </div>
 
   </main>
 
+  <!-- Global Footer Container -->
   <div id="global-footer"></div>
+
+  <!-- Sticky Mobile Bottom Navigation -->
   <div id="mobile-bottom-nav"></div>
 
-  <!-- Scripts -->
+  <!-- Modular JavaScript Engine Stack -->
   <script src="assets/js/data.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/ranking-engine.js"></script>
