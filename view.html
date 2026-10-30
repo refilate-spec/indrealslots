@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product View — AGS Platform</title>
+  <title>Product Details — AGS Platform</title>
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Project Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/view.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="pb-20 md:pb-10">
+<body class="pb-24 md:pb-12 bg-[var(--bg-primary)] text-[var(--text-primary)] transition-colors duration-300">
 
+  <!-- Global Header Container -->
   <div id="global-header"></div>
 
+  <!-- Main Product View Container -->
   <main class="max-w-5xl mx-auto px-4 lg:px-8 py-8 space-y-8">
-    <div id="product-view-container"></div>
+    <div id="product-view-container">
+      <!-- Dynamic Product Content will be injected here by view.js -->
+    </div>
   </main>
 
+  <!-- Global Footer Container -->
   <div id="global-footer"></div>
+
+  <!-- Sticky Mobile Bottom Navigation -->
   <div id="mobile-bottom-nav"></div>
 
+  <!-- Modular JavaScript Engine Stack -->
   <script src="assets/js/data.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/interaction-engine.js"></script>
